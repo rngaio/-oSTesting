@@ -1,0 +1,84 @@
+<style>
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  background-color: transparent;
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+}
+
+/* --- Webcam Frame --- */
+.webcam-frame {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 480px;
+  height: 270px; /* 16:9 aspect ratio */
+  box-sizing: border-box;
+}
+
+.frame-border {
+  width: 100%;
+  height: 100%;
+  border: 3px solid #7289da;
+  box-shadow: 0 0 15px rgba(114, 137, 218, 0.6);
+  border-radius: 8px;
+}
+
+.cam-label {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #7289da;
+  padding: 4px 16px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+
+/* --- Ticker / Stats Bar --- */
+.ticker-bar {
+  position: absolute;
+  bottom: 40px;
+  left: 50px;
+  display: flex;
+  align-items: center;
+  background: rgba(15, 15, 20, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 24px;
+  border-radius: 30px;
+}
+
+.ticker-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.ticker-title {
+  color: #8a8d93;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.ticker-value {
+  color: #00ffcc;
+  font-weight: 700;
+}
+
+.ticker-divider {
+  width: 1px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 0 16px;
+}
+</style>
