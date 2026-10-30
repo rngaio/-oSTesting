@@ -1,5 +1,5 @@
 <style>
-
+   /* Ensure background is completely transparent for OBS */
 body {
   margin: 0;
   padding: 0;
@@ -7,9 +7,10 @@ body {
   height: 1080px;
   overflow: hidden;
   background-color: transparent;
-  font-family: 'Inter', sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #ffffff;
-}
+} 
 
 /* --- Webcam Frame --- */
 .webcam-frame {
@@ -44,41 +45,74 @@ body {
 }
 
 /* --- Ticker / Stats Bar --- */
-.ticker-bar {
-  position: absolute;
-  bottom: 40px;
-  left: 50px;
-  display: flex;
-  align-items: center;
-  background: rgba(15, 15, 20, 0.85);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 10px 24px;
-  border-radius: 30px;
-}
-
-.ticker-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 14px;
-}
-
-.ticker-title {
-  color: #8a8d93;
-  font-weight: 700;
-  font-size: 11px;
-}
-
-.ticker-value {
-  color: #00ffcc;
-  font-weight: 700;
-}
-
-.ticker-divider {
+   .ticker-bar {
+   position: absolute;
+   bottom: 40px;
+   left: 50px;
+   display: flex;
+   align-items: center;
+   background: rgba(15, 15, 20, 0.85);
+   backdrop-filter: blur(8px);
+   border: 1px solid rgba(255, 255, 255, 0.1);
+   padding: 10px 24px;
+   border-radius: 30px;
+   }
+   .ticker-item {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   font-size: 14px;
+   }
+   .ticker-title {
+   color: #8a8d93;
+   font-weight: 700;
+   font-size: 11px;
+   }
+   .ticker-value {
+   color: #00ffcc;
+   font-weight: 700;
+   }
+   .ticker-divider {
   width: 1px;
   height: 16px;
   background: rgba(255, 255, 255, 0.2);
   margin: 0 16px;
-}
+   }
+/* --- Icons / Stats Bar --- */
+   .box {
+   width: 280px;
+   height: 20px;
+   margin-left: 300px;
+   margin-top: 10px;
+   position: flex;
+   background: #BFBFBF;
+   }
+   .vertical {
+    position: absolute;
+    background: #B10E00;
+    margin-top: 150px;
+    margin-left: 700px;
+    width: 60px;
+    height: 100px;
+    clip-path: polygon(100% 0, 100% 100%, 0 50%, 0 0);
+    }
+  .boto {
+    position: absolute;
+    background: #6B0F00;
+    margin-top: 150px;
+    margin-left: 760px;
+    width: 60px;
+    height: 100px;
+    clip-path: polygon(100% 0, 100% 50%, 0 100%, 0 0);
+    }
+  .topo {
+    position: absolute;
+    background: #FF1400;
+    margin-top: 100px;
+    margin-left: 700px;
+    width: 120px;
+    height: 100px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
+  
 </style>
